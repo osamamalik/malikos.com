@@ -1,0 +1,22 @@
+.contact {
+    background-color: $dark-grey;
+    color: white;
+    min-height: 50vh;
+    text-align: center;
+}
+
+.contact h1 {
+    color: lighten($primary, 10%);
+    font-size: $l-size;
+    padding-top: $l-size;
+}
+
+.contact svg path {
+    fill: $primary;
+    stroke: $primary;
+}
+
+// Media query for desktop
+@media (min-width: $desktop-breakpoint) {
+    
+}

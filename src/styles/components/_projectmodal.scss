@@ -1,0 +1,106 @@
+// Transition effect for opening and closing the modal
+.ReactModalPortal .ReactModal__Overlay {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    transition: opacity 200ms ease-in-out;
+}
+
+.project-modal {
+    background: $off-white;
+    border-radius: 10px;
+    color: black;
+    font-size: 1rem;
+    outline: none;
+    overflow-y: auto;;
+    max-height: 90%;
+    position: absolute;
+    text-align: center;
+    width: 90%;
+}
+
+.project-modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.6),
+}
+
+.project-modal-header {
+    display: flex;
+}
+
+.project-modal-header-left {
+    width: 10%;
+}
+
+.project-modal h1 {
+    color: $primary;
+    //font-size: $l-size;
+    width: 80%;
+}
+
+.project-modal h1::selection {
+    background: $primary;
+    color: white;
+}
+
+.project-modal-close {
+    background: none;
+    border: none;
+    color: grey;
+    cursor: pointer;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: $m-size;
+    width: 10%;
+}
+
+.project-modal-close:hover {
+    color: $primary;
+}
+
+.project-modal-close:focus {
+    color: darken($primary, 25%);
+    outline: 0;
+}
+
+.project-modal-body {
+    padding: $m-size $l-size $l-size $l-size;
+}
+
+.project-modal img {
+    margin-bottom: $s-size;
+    max-width: 100%;
+}
+
+.project-modal .links {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: $m-size;
+}
+
+.project-modal a {
+    font-size: $m-size;
+    margin-bottom: $s-size;
+}
+
+// Media query for desktop
+@media (min-width: $desktop-breakpoint) {
+    .project-modal {
+        height: auto;
+        width: 50rem;
+    }
+
+    .project-modal .links {
+        flex-direction: row;
+    }
+
+    .project-modal a {
+        font-size: $m-size;
+        margin: 0 $m-size 0 $m-size;
+    }
+}

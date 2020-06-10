@@ -1,0 +1,90 @@
+.about {
+    background-color: $off-white;
+    color: $dark-grey;
+    font-size: $s-size;
+    min-height: 100vh;
+    padding: $xl-size $m-size $m-size $m-size;
+}
+
+.about h1 {
+    color: $primary;
+    font-size: $l-size;
+}
+
+.about h1::selection {
+    background: $primary;
+    color: white;
+}
+
+.about-flex {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-bottom: $xl-size;
+}
+
+.about-details {
+    padding: 0;
+}
+
+.about-image {
+    width: 100%;
+    border-radius: 50%;
+}
+
+.about-skills {
+    display: flex;
+    flex-direction: column;
+    margin-top: $m-size;
+}
+
+.about-skills-column {
+    display: flex;
+    flex-direction: column;
+    padding-right: $xs-size;
+    width: 100%;
+}
+
+.about-skills-bar {
+    align-content: center;
+    align-items: center;
+    display: flex;
+    font-size: $xs-size;
+    width: 100%;
+}
+
+.about-skills-bar p {
+    padding: 0 $s-size $s-size 0;
+    text-align: right;
+    width: 30%;
+}
+
+.about-skills-bar-progress {
+    width: 70%;
+}
+
+// Media query for desktop
+@media (min-width: $desktop-breakpoint) {
+    .about-flex {
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    .about-details {
+        flex-grow: 1;
+        margin-right: $xl-size;
+        max-width: 60%;
+        padding-right: $m-size;
+    }
+
+    .about-image {
+        padding: $s-size;
+        height: 100%;
+        max-width: 40%;
+    }
+
+    .about-skills {
+        flex-direction: row;
+    }
+}

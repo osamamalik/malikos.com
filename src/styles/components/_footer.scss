@@ -1,0 +1,15 @@
+.footer {
+    background-color: $dark-grey;
+    color: white;
+    font-size: $xs-size;
+    height: 40vh;
+    position: relative;
+}
+
+.footer-signature {
+    bottom: 0;
+    padding: $xs-size;
+    position: absolute;
+    right: 0;
+    width: auto;
+}

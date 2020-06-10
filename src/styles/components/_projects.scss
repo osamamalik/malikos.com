@@ -1,0 +1,128 @@
+.projects {
+    background-color: $primary;
+    color: white;
+    font-size: $s-size;
+    min-height: 100vh;
+    padding: $xl-size $m-size $m-size $m-size;
+}
+
+.projects h1 {
+    font-size: $l-size;
+    padding-bottom: $m-size;
+}
+
+.projects ::selection {
+    background: rgba(255, 255, 255, 0.99);
+    color: $primary;
+}
+
+.projects-flex {
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin-bottom: $m-size;
+}
+
+.project-image {
+    cursor: pointer;
+    display: block;
+    width: 20rem;
+}
+
+.project-hover {
+    cursor: pointer;
+    position: absolute;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.8);
+    color: $off-white;
+    transition: .5s ease;
+    opacity: 0;
+    height: 20rem;
+    width: 20rem;
+    text-align: center;
+}
+
+.project-container {
+    margin: $xs-size 0;
+    position: relative;
+    width: 20rem;
+}
+
+.project-container:hover .project-hover {
+    opacity: 1;
+}
+
+.project-hover-content {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 30rem;
+}
+
+.project-hover-top {
+    
+}
+
+.project-hover-name {
+    
+}
+
+.project-hover-description {
+    
+}
+
+.project-tags {
+    align-items: baseline;
+    display: flex;
+    height: 20%;
+    justify-content: center;
+    padding-top: $s-size;
+}
+
+.project-tags p {
+    background: rgba(0, 0, 0, 0);
+    border: 2px solid $primary;
+    border-radius: 5px;
+    color: $primary;
+    padding: 3px 5px 0 5px;
+    margin: 5px;
+    height: 35px;
+}
+
+// Media query for desktop
+@media (min-width: $desktop-breakpoint) {
+    .projects-flex {
+        margin-bottom: $xl-size;
+    }
+
+    .project-image {
+        width: 30rem;
+    }
+    
+    .project-hover {
+        height: 30rem;
+        width: 30rem;
+    }
+    
+    .project-container {
+        width: 30rem;
+    }
+
+    .project-hover-top {
+        height: 45%;
+    }
+    
+    .project-hover-name {
+        height: 15%;
+    }
+    
+    .project-hover-description {
+        height: 20%;
+    }
+    
+    .project-tags {
+        height: 20%;
+    }
+}

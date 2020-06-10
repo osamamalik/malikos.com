@@ -1,0 +1,86 @@
+.worked {
+    background-color: $stone;
+    color: $primary;
+    font-size: $s-size;
+    padding: $xl-size $m-size $xl-size $m-size;
+}
+
+.worked h1 {
+    //color: lighten($primary, 10%);
+    font-size: $l-size;
+    padding-bottom: $m-size;
+}
+
+.worked-flex {
+    display: flex;
+    flex-direction: column;
+}
+
+.worked-employers {
+    align-items: center;
+    border-bottom: 3px solid lighten($dark-grey, 40%);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding-bottom: $m-size;
+}
+
+.worked-employers img {
+    max-width: 15rem;
+    margin: 0 0 $l-size 0;
+}
+
+.worked-resume {
+    padding-top: $m-size;
+    text-align: center;
+}
+
+.resume-icon {
+    padding: none;
+    width: $xl-size;
+}
+
+// Media query for desktop
+@media (min-width: $desktop-breakpoint) {
+    .worked-flex {
+        align-items: center;
+        flex-direction: row;
+        padding-bottom: $m-size;
+    }
+
+    .worked-employers {
+        border-bottom: 0;
+        border-right: 3px solid lighten($dark-grey, 40%);
+        padding-top: $l-size;
+        padding-bottom: 0;
+        padding-right: $xs-size;
+        width: 70%;
+    }
+
+    .worked-employers img {
+        filter: grayscale(100%);
+        margin-right: $l-size;
+    }
+    
+    .worked-employers img:hover {
+        filter: none;
+        transition: .5s ease;
+    }
+
+    .resume-container {
+        align-items: center;
+        display: flex;
+        justify-content: center;
+        height: 5.8rem;
+    }
+
+    .worked-resume {
+        padding: 0 0 $m-size $m-size;
+        width: 30%;
+    }
+
+    .resume-icon:hover {
+        width: 5.8rem;
+        transition: 1 ease;
+    }
+}
