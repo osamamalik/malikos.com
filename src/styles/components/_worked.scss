@@ -5,10 +5,15 @@
     padding: $xl-size $m-size $xl-size $m-size;
 }
 
+.worked ::selection {
+    background: $primary;
+    color: $stone;
+}
+
 .worked h1 {
-    //color: lighten($primary, 10%);
     font-size: $l-size;
     padding-bottom: $m-size;
+    text-align: center;
 }
 
 .worked-flex {
@@ -18,7 +23,7 @@
 
 .worked-employers {
     align-items: center;
-    border-bottom: 3px solid lighten($dark-grey, 40%);
+    border-bottom: 2px solid rgba(0,0,0,0.1);
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
@@ -42,6 +47,10 @@
 
 // Media query for desktop
 @media (min-width: $desktop-breakpoint) {
+    .worked h1 {
+        text-align: left;
+    }
+
     .worked-flex {
         align-items: center;
         flex-direction: row;
@@ -50,7 +59,7 @@
 
     .worked-employers {
         border-bottom: 0;
-        border-right: 3px solid lighten($dark-grey, 40%);
+        border-right: 2px solid rgba(0,0,0,0.1);
         padding-top: $l-size;
         padding-bottom: 0;
         padding-right: $xs-size;

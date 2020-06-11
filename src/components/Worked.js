@@ -1,4 +1,5 @@
 import React from 'react';
+import { Fade } from 'react-reveal';
 import abelsoft from '../res/abelsoft.png';
 import deloitte from '../res/deloitte.png';
 import lassonde from '../res/lassonde.png';
@@ -11,19 +12,19 @@ export default class Worked extends React.Component {
         return (
             <div className="worked">
                 <div className="container">
-                    <h1>Where I've Worked</h1>
+                    <Fade bottom><h1>Where I've Worked</h1></Fade>
                     <div className="worked-flex">
                         <div className="worked-employers">
-                            <a href="https://www2.deloitte.com/ca/en.html" alt="deloitte"><img src={deloitte} alt="Deloitte" /></a>
-                            <a href="https://lassonde.yorku.ca/" alt="lassonde"><img src={lassonde} alt="Lassonde" /></a>
-                            <a href="http://www.rbcroyalbank.com/" alt="rbc"><img src={rbc} alt="RBC" /></a>
-                            <a href="https://www.abelsoft.com/" alt="abelsoft"><img src={abelsoft} alt="ABELSoft" /></a>
+                            <Fade bottom><a href="https://www2.deloitte.com/ca/en.html" alt="deloitte"><img src={deloitte} alt="Deloitte" /></a></Fade>
+                            <Fade bottom><a href="https://lassonde.yorku.ca/" alt="lassonde"><img src={lassonde} alt="Lassonde" /></a></Fade>
+                            <Fade bottom><a href="http://www.rbcroyalbank.com/" alt="rbc"><img src={rbc} alt="RBC" /></a></Fade>
+                            <Fade bottom><a href="https://www.abelsoft.com/" alt="abelsoft"><img src={abelsoft} alt="ABELSoft" /></a></Fade>
                         </div>
                         <div className="worked-resume">
-                            <h2>View My Resume</h2>
+                            <Fade bottom><h2>View My Resume</h2></Fade>
                             <br />
                             <div className="resume-container">
-                                <a href={resume} target="_blank" rel="noopener noreferrer"><img src={resumeicon} className="resume-icon" alt="resume" target="_blank" rel="noopener noreferrer" /></a>
+                                <Fade bottom><a href={resume} target="_blank" rel="noopener noreferrer"><img src={resumeicon} className="resume-icon" alt="resume" target="_blank" rel="noopener noreferrer" /></a></Fade>
                             </div>
                         </div>
                     </div>
