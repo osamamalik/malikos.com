@@ -1,14 +1,19 @@
 .contact {
     background-color: $dark-grey;
     color: white;
-    min-height: 50vh;
+    min-height: 60vh;
     text-align: center;
 }
 
 .contact h1 {
-    color: lighten($primary, 10%);
+    color: $primary;
     font-size: $l-size;
     padding-top: $l-size;
+}
+
+.contact h1::selection {
+    background: rgba(136, 63, 184, 0.99);
+    color: $dark-grey;
 }
 
 .contact svg path {

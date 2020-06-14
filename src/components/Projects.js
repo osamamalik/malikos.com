@@ -10,7 +10,6 @@ import mp from '../res/mp-square.png';
 import mplePoster from '../res/Machine Learning for Printed Electronics.pdf';
 import tee from '../res/tee-square.png';
 import teePoster from '../res/TEE Poster.pdf';
-import placeholder from '../res/placeholder.png';
 
 export default class Projects extends React.Component {
     state = {
@@ -64,9 +63,9 @@ export default class Projects extends React.Component {
                                         title={'Forecast'}
                                         image={<img src={require('../res/forecast-preview.png')} alt="forecast" />}
                                         body={<p>Forecast is a weather application I made using Node.js. It was an exercise to get familiar with the workings of Node.js and different concepts within the platform such as custom modules, error handling, callback functions, and more. Forecast uses the Mapbox API to get the latitude and longitude of a specified location, and then uses the Weatherstack API to get that location's current weather data.</p>}
-                                        button1={'LAUNCH'}
+                                        button1={'Launch'}
                                         button1Link={'https://malikos-weather-application.herokuapp.com/'}
-                                        button2={'SOURCE'}
+                                        button2={'Source'}
                                         button2Link={'https://github.com/osamamalik/WeatherForecastApp'}
                                     />
                                     
@@ -103,7 +102,7 @@ export default class Projects extends React.Component {
                                                 on GitHub below for a full rundown of the all the features.
                                             </p>
                                         }
-                                        button1={'SOURCE'}
+                                        button1={'Source'}
                                         button1Link={'https://github.com/osamamalik/mom-pop'}
                                     />
                                 </div>
@@ -140,9 +139,9 @@ export default class Projects extends React.Component {
                                                 to use these readings to generate real-time CT and ultrasound images.
                                             </p>
                                         }
-                                        button1={'POSTER'}
+                                        button1={'Poster'}
                                         button1Link={teePoster}
-                                        button2={'SOURCE'}
+                                        button2={'Source'}
                                         button2Link={'https://github.com/osamamalik/TEESimulator'}
                                     />
                                 </div>
@@ -176,7 +175,7 @@ export default class Projects extends React.Component {
                                                 an optimal printing sequence was not known) as the input and then predict the printing sequence for the pattern.
                                             </p>
                                         }
-                                        button1={'POSTER'}
+                                        button1={'Poster'}
                                         button1Link={mplePoster}
                                     />
                                 </div>
@@ -215,7 +214,7 @@ export default class Projects extends React.Component {
                                                 I'm hoping to redesign and redevelop it as a web app soon, now that I've progressed further in my education and career.
                                             </p>
                                         }
-                                        button1={'SOURCE'}
+                                        button1={'Source'}
                                         button1Link={'https://github.com/osamamalik/comicbooktracker'}
                                     />
                                 </div>

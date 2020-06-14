@@ -37,19 +37,19 @@
 // Animation Controls
 @media (prefers-reduced-motion: no-preference) {
   .welcome-blur {
-    animation: welcome-fade-from-black 2s ease-in 1s backwards;
+    animation: welcome-fade-from-black 1s ease-in 1s backwards;
   }
 
   .welcome-logo {
-    animation: welcome-logo-shrink 2s ease-out 1s both;
+    animation: welcome-logo-shrink 1s ease-out 1s both;
   }
 
   .welcome-malikos {
-    animation: welcome-fade-in 2s 4s backwards;
+    animation: welcome-fade-in 1s 3s backwards;
   }
 
   .welcome-container-bottom p {
-    animation: welcome-fade-in 2s 5s backwards;
+    animation: welcome-fade-in 1s 4s backwards;
   }
 }
 
