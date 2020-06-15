@@ -2,7 +2,7 @@
     background-color: $off-white;
     color: $dark-grey;
     font-size: $s-size;
-    min-height: 100vh;
+    //min-height: 100vh;
     padding: $xl-size $m-size $m-size $m-size;
 }
 
@@ -45,6 +45,7 @@
 }
 
 .about-skills-column h3 {
+    color: $primary;
     margin-bottom: $xs-size;
 }
 
@@ -71,6 +72,7 @@
         padding: $s-size;
         height: 100%;
         max-width: 40%;
+        margin-bottom: 15rem;
     }
 
     .about-image:hover {

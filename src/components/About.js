@@ -14,8 +14,19 @@ export default class About extends React.Component {
                     <div className="about-flex">
                         <div className="about-details">
                             <Fade bottom>
-                                <p>
-                                    I am currently building this website and it should be ready very soon. You'll be able to see some of the cool things I've worked on and what I'm good at. I'm very excited for you to see it!
+                                <p>                                
+                                    I'm a software developer with a Bachelor of Science degree in Computer Science from York University.
+                                    Prior to that, I obtained a 3 year advanced diploma in Software Development from Mohawk College. 
+                                    I have experience in a variety of different technologies and tools through past employment, internships, and courses.
+                                    As you might be able to tell, I've been interested in the field for a long time and am always striving to grow because
+                                    there's so much to learn!
+                                </p>  
+                            </Fade> 
+                            <Fade bottom>
+                                <p>    
+                                    I consider myself to be a generalist - I like to be involved in all sides of development, whether
+                                    it be front-end or back-end. Clean designs and getting the details right are very important to me, and 
+                                    that should be supported by clean, well-written code that can be scaled.
                                 </p>
                             </Fade>
                             <br />

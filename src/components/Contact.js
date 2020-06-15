@@ -20,13 +20,13 @@ export default class About extends React.Component {
 
                     <div className="contact-social">
                         <a href="mailto:omalik91@gmail.com">
-                            <div className="contact-email"></div>
+                            <Fade bottom><div className="contact-email" target="_blank" rel="noopener noreferrer"></div></Fade>
                         </a>
-                        <a href="https://linkedin.com/in/osamasmalik">
-                            <div className="contact-linkedin"></div>
+                        <a href="https://linkedin.com/in/osamasmalik" target="_blank" rel="noopener noreferrer">
+                            <Fade bottom><div className="contact-linkedin"></div></Fade>
                         </a>
-                        <a href="https://github.com/osamamalik">
-                            <div className="contact-github"></div>
+                        <a href="https://github.com/osamamalik" target="_blank" rel="noopener noreferrer">
+                            <Fade bottom><div className="contact-github"></div></Fade>
                         </a>
                     </div>
                 </div>

@@ -95,11 +95,11 @@
 // Animation Controls
 @media (prefers-reduced-motion: no-preference) {
     .navbar, .navbar-logo {
-        animation: navbar-slide-in 1s ease-in 5s backwards;
+        animation: navbar-slide-in 1s ease-in 4s backwards;
     }
 
     .navbar-items, .navbar-item, .navbar-link {
-        animation: fade-in 1s ease-in 5.8s backwards;
+        animation: fade-in 1s ease-in 4.8s backwards;
     }
 }
 
