@@ -1,6 +1,7 @@
 .contact {
     background-color: $dark-grey;
     color: white;
+    font-size: $s-size;
     min-height: 60vh;
     text-align: center;
 }
@@ -8,7 +9,7 @@
 .contact h1 {
     color: $primary;
     font-size: $l-size;
-    padding-top: $l-size;
+    padding: $l-size 0;
 }
 
 .contact h1::selection {
@@ -16,12 +17,137 @@
     color: $dark-grey;
 }
 
-.contact svg path {
-    fill: $primary;
-    stroke: $primary;
+.contact-message {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: $m-size $xl-size;
 }
+
+.contact-message p {
+    width: 100%;
+}
+
+.contact-social {
+    display: flex;
+    justify-content: center;
+    margin-top: $l-size;
+    padding: $m-size;
+}
+
+.contact-email {
+    background-image: $email;
+    background-repeat:no-repeat;
+    background-size:contain;
+    cursor: pointer;
+    height: $xl-size;
+    margin: $m-size;
+    width: $xl-size;
+}
+
+.contact-email:hover {
+    background-image: $email-hover;
+}
+
+.contact-email {
+    background-image: $email;
+    background-repeat:no-repeat;
+    background-size:contain;
+    cursor: pointer;
+    height: $xl-size;
+    margin: $m-size;
+    width: $xl-size;
+}
+
+.contact-email:hover {
+    background-image: $email-hover;
+}
+
+.contact-linkedin {
+    background-image: $linkedin;
+    background-repeat:no-repeat;
+    background-size:contain;
+    cursor: pointer;
+    height: $xl-size;
+    margin: $m-size;
+    width: $xl-size;
+}
+
+.contact-linkedin:hover {
+    background-image: $linkedin-hover;
+}
+
+.contact-github {
+    background-image: $github;
+    background-repeat:no-repeat;
+    background-size:contain;
+    cursor: pointer;
+    height: $xl-size;
+    margin: $m-size;
+    width: $xl-size;
+}
+
+.contact-github:hover {
+    background-image: $github-hover;
+}
+
+// .contact-form {
+//     display: flex;
+//     justify-content: center;
+// }
+
+// .contact-form-inner {
+//     align-items: center;
+//     background: $dark-grey;
+//     display: flex;
+//     flex-direction: column;
+//     font-size: $s-size;
+//     justify-content: center;
+//     width: 80%;
+// }
+
+// .contact-form-inner input {
+//     background: none;
+//     border: 2px solid $primary;
+//     color: white;
+//     height: $l-size;
+//     margin-bottom: $m-size;
+//     padding: $xs-size;
+//     width: 100%;
+// }
+
+// .contact-form-inner input:focus {
+//     outline: 0;
+// }
+
+
+// .contact-form-inner textarea {
+//     background: none;
+//     border: 2px solid $primary;
+//     color: white;
+//     margin-bottom: $m-size;
+//     padding: $xs-size;
+//     width: 100%;
+// }
+
+// .contact-form-inner textarea:focus {
+//     outline: 0;
+// }
+
+// .contact-send {
+//     align-self: flex-end;
+//     font-size: $s-size;
+//     background: none;
+// }
+
+// .contact-send:focus {
+//     outline: 0;
+// }
 
 // Media query for desktop
 @media (min-width: $desktop-breakpoint) {
-    
+    .contact-form-inner {
+        width: 60%;
+    }
 }

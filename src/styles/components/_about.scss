@@ -9,9 +9,10 @@
 .about h1 {
     color: $primary;
     font-size: $l-size;
+    margin-bottom: $l-size;
 }
 
-.about h1::selection {
+.about h1::selection, h3::selection {
     background: $primary;
     color: white;
 }
@@ -35,33 +36,21 @@
 
 .about-skills {
     display: flex;
-    flex-direction: column;
     margin-top: $m-size;
 }
 
 .about-skills-column {
-    display: flex;
-    flex-direction: column;
-    padding-right: $xs-size;
+    margin-bottom: $m-size;
     width: 100%;
 }
 
-.about-skills-bar {
-    align-content: center;
-    align-items: center;
-    display: flex;
-    font-size: $xs-size;
-    width: 100%;
+.about-skills-column h3 {
+    margin-bottom: $xs-size;
 }
 
-.about-skills-bar p {
-    padding: 0 $s-size $xs-size 0;
-    text-align: right;
-    width: 5.4rem;
-}
-
-.about-skills-bar-progress {
-    width: 70%;
+.about-skills-column p {
+    padding-left: $xs-size;
+    margin: 0;
 }
 
 // Media query for desktop
@@ -72,7 +61,7 @@
     }
 
     .about-details {
-        flex-grow: 1;
+        //flex-grow: 1;
         margin-right: $xl-size;
         max-width: 60%;
         padding-right: $m-size;
@@ -87,9 +76,5 @@
     .about-image:hover {
         border: 10px solid $primary;
         padding: 0;
-    }
-
-    .about-skills {
-        flex-direction: row;
     }
 }

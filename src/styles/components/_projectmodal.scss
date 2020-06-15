@@ -33,13 +33,12 @@
 }
 
 .project-modal-header-left {
-    width: 10%;
+    width: 4%;
 }
 
 .project-modal h1 {
     color: $primary;
-    //font-size: $l-size;
-    width: 80%;
+    width: 91%;
 }
 
 .project-modal h1::selection {
@@ -52,9 +51,10 @@
     border: none;
     color: grey;
     cursor: pointer;
+    display: flex;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: $m-size;
-    width: 10%;
+    padding-top: $xs-size;
 }
 
 .project-modal-close:hover {
@@ -92,6 +92,7 @@
 @media (min-width: $desktop-breakpoint) {
     .project-modal {
         height: auto;
+        margin-top: 2rem;
         width: 50rem;
     }
 

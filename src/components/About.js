@@ -1,5 +1,4 @@
 import React from 'react';
-import { Progress } from 'semantic-ui-react';
 import { Fade } from 'react-reveal';
 import me from '../res/me.jpeg';
 
@@ -20,89 +19,32 @@ export default class About extends React.Component {
                                 </p>
                             </Fade>
                             <br />
-                            
+                            <div className="about-skills">
+                                <div className="about-skills-column">
+                                    <Fade bottom><h3>Languages</h3></Fade>
+                                    <Fade bottom><p>Java</p></Fade>
+                                    <Fade bottom><p>Python</p></Fade>
+                                    <Fade bottom><p>C#</p></Fade>
+                                    <Fade bottom><p>C</p></Fade>
+                                    <Fade bottom><p>SQL</p></Fade>
+                                    <Fade bottom><p>HTML</p></Fade>
+                                    <Fade bottom><p>CSS</p></Fade>
+                                    <Fade bottom><p>JavaScript</p></Fade>
+                                    <Fade bottom><p>PHP</p></Fade>
+                                </div>
+                                <div className="about-skills-column">
+                                    <Fade bottom><h3>Frameworks / Tools</h3></Fade>
+                                    <Fade bottom><p>Android Development</p></Fade>
+                                    <Fade bottom><p>React.js</p></Fade>
+                                    <Fade bottom><p>Node.js</p></Fade>
+                                    <Fade bottom><p>WPF</p></Fade>
+                                    <Fade bottom><p>Git</p></Fade>
+                                </div>
+                            </div>
                         </div>
                         <Fade bottom>
                             <img src={me} className="about-image" alt="me" />
                         </Fade>
-                    </div> 
-                    <div className="about-skills">
-                        <div className="about-skills-column">
-                            <Fade bottom>
-                                <div className="about-skills-bar">
-                                    <p>Java</p>
-                                    <Progress className="about-skills-bar-progress" percent={90} color={'purple'} />
-                                </div>
-                            </Fade>
-                            <Fade bottom>
-                                <div className="about-skills-bar">
-                                    <p>Python</p>
-                                    <Progress className="about-skills-bar-progress" percent={75} color={'purple'} />
-                                </div>
-                            </Fade>
-                            <Fade bottom>
-                                <div className="about-skills-bar">
-                                    <p>C</p>
-                                    <Progress className="about-skills-bar-progress" percent={60} color={'purple'} />
-                                </div>
-                            </Fade>
-                            <Fade bottom>
-                                <div className="about-skills-bar">
-                                    <p>C#</p>
-                                    <Progress className="about-skills-bar-progress" percent={80} color={'purple'} />
-                                </div>
-                            </Fade>
-                            <Fade bottom>
-                                <div className="about-skills-bar">
-                                    <p>Android</p>
-                                    <Progress className="about-skills-bar-progress" percent={75} color={'purple'} />
-                                </div>
-                            </Fade>
-                            <Fade bottom>
-                                <div className="about-skills-bar">
-                                    <p>SQL</p>
-                                    <Progress className="about-skills-bar-progress" percent={80} color={'purple'} />
-                                </div>
-                            </Fade>
-                        </div>
-                        <div className="about-skills-column">
-                            <Fade bottom>
-                                <div className="about-skills-bar">
-                                    <p>HTML, CSS</p>
-                                    <Progress className="about-skills-bar-progress" percent={85} color={'purple'} />
-                                </div>
-                            </Fade>
-                            <Fade bottom>
-                                <div className="about-skills-bar">
-                                    <p>PHP</p>
-                                    <Progress className="about-skills-bar-progress" percent={25} color={'purple'} />
-                                </div>
-                            </Fade>
-                            <Fade bottom>
-                                <div className="about-skills-bar">
-                                    <p>JavaScript</p>
-                                    <Progress className="about-skills-bar-progress" percent={75} color={'purple'} />
-                                </div>
-                            </Fade>
-                            <Fade bottom>
-                                <div className="about-skills-bar">
-                                    <p>Node.js</p>
-                                    <Progress className="about-skills-bar-progress" percent={50} color={'purple'} />
-                                </div>
-                            </Fade>
-                            <Fade bottom>
-                                <div className="about-skills-bar">
-                                    <p>React</p>
-                                    <Progress className="about-skills-bar-progress" percent={60} color={'purple'} />
-                                </div>
-                            </Fade>
-                            <Fade bottom>
-                                <div className="about-skills-bar">
-                                    <p>Git</p>
-                                    <Progress className="about-skills-bar-progress" percent={60} color={'purple'} />
-                                </div>
-                            </Fade>
-                        </div>
                     </div>
                 </div>
             </div>

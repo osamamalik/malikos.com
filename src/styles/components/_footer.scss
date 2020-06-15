@@ -2,7 +2,7 @@
     background-color: $dark-grey;
     color: white;
     font-size: $xs-size;
-    height: 40vh;
+    height: 10vh;
     position: relative;
 }
 
@@ -12,4 +12,9 @@
     position: absolute;
     right: 0;
     width: auto;
+}
+
+.footer-signature code::selection, span::selection {
+    background: $primary;
+    color: white;
 }

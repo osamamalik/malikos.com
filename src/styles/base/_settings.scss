@@ -6,6 +6,12 @@ $stone: #e2d5cc;
 
 // Images
 $banner: url('../../res/banner.png');
+$email: url('../../res/email.png');
+$email-hover: url('../../res/email-purple.png');
+$linkedin: url('../../res/linkedin.png');
+$linkedin-hover: url('../../res/linkedin-purple.png');
+$github: url('../../res/github.png');
+$github-hover: url('../../res/github-purple.png');
 
 // Spacing
 $xs-size: 0.8rem;
@@ -14,7 +20,3 @@ $m-size: 1.6rem;
 $l-size: 3.2rem;
 $xl-size: 4.8rem;
 $desktop-breakpoint: 45rem;
-
-:export {
-    primary: $dark-grey;
-}
