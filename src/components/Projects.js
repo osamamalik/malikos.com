@@ -1,4 +1,5 @@
 import React from 'react';
+import ReactGA from 'react-ga';
 import ProjectModal from './ProjectModal';
 import { Fade } from 'react-reveal';
 import { Icon } from 'semantic-ui-react';
@@ -21,19 +22,49 @@ export default class Projects extends React.Component {
     }
 
     handleCloseProjectForecast = () => { this.setState(() => ({ projectForecastSelected: false })); }
-    handleOpenProjectForecast = () => { this.setState(() => ({ projectForecastSelected: true })); }
+    handleOpenProjectForecast = () => {
+        this.setState(() => ({ projectForecastSelected: true }));
+        ReactGA.event({
+            category: 'Projects',
+            action: 'Forecast opened'
+        });
+    }
 
     handleCloseProjectMP = () => { this.setState(() => ({ projectMPSelected: false })); }
-    handleOpenProjectMP = () => { this.setState(() => ({ projectMPSelected: true })); }
+    handleOpenProjectMP = () => { 
+        this.setState(() => ({ projectMPSelected: true })); 
+        ReactGA.event({
+            category: 'Projects',
+            action: 'Mom & Pop Bookstore opened'
+        });
+    }
 
     handleCloseProjectMLPE = () => { this.setState(() => ({ projectMLPESelected: false })); }
-    handleOpenProjectMLPE = () => { this.setState(() => ({ projectMLPESelected: true })); }
+    handleOpenProjectMLPE = () => {
+         this.setState(() => ({ projectMLPESelected: true })); 
+         ReactGA.event({
+            category: 'Projects',
+            action: 'Machine Learning for Printed Electronics opened'
+        });
+        }
     
     handleCloseProjectTEE = () => { this.setState(() => ({ projectTEESelected: false })); }
-    handleOpenProjectTEE = () => { this.setState(() => ({ projectTEESelected: true })); }
+    handleOpenProjectTEE = () => { 
+        this.setState(() => ({ projectTEESelected: true })); 
+        ReactGA.event({
+            category: 'Projects',
+            action: 'TEE opened'
+        });
+    }
 
     handleCloseProjectIssues = () => { this.setState(() => ({ projectIssuesSelected: false })); }
-    handleOpenProjectIssues = () => { this.setState(() => ({ projectIssuesSelected: true })); }
+    handleOpenProjectIssues = () => {
+         this.setState(() => ({ projectIssuesSelected: true }));
+         ReactGA.event({
+            category: 'Projects',
+            action: 'Issues opened'
+        });
+    }
 
     render() {
         return (

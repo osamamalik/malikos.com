@@ -26,7 +26,7 @@ export default class About extends React.Component {
                                 <p>    
                                     I consider myself to be a generalist - I like to be involved in all sides of development, whether
                                     it be front-end or back-end. Clean designs and getting the details right are very important to me, and 
-                                    that should be supported by clean, well-written code that can be scaled.
+                                    that should be supported by clean, well-written code that can be easily scaled.
                                 </p>
                             </Fade>
                             <br />

@@ -10,6 +10,14 @@
     color: $stone;
 }
 
+.worked a {
+    color: $primary;
+}
+
+.worked a:hover {
+    color: $primary;
+}
+
 .worked h1 {
     font-size: $l-size;
     padding-bottom: $m-size;

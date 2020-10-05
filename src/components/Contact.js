@@ -1,8 +1,30 @@
 import React from 'react';
+import ReactGA from 'react-ga';
 import { Fade } from 'react-reveal';
 
 export default class About extends React.Component {
     render() {
+        const EmailClickHandler = () => {
+            ReactGA.event({
+                category: 'Contact',
+                action: 'Email'
+            });
+        };
+
+        const LinkedInClickHandler = () => {
+            ReactGA.event({
+                category: 'Contact',
+                action: 'LinkedIn'
+            });
+        };
+
+        const GitHubClickHandler = () => {
+            ReactGA.event({
+                category: 'Contact',
+                action: 'GitHub'
+            });
+        };
+
         return (
             <div className="contact">
                 <div className="container">
@@ -19,13 +41,13 @@ export default class About extends React.Component {
                     </div>
 
                     <div className="contact-social">
-                        <a href="mailto:omalik91@gmail.com">
-                            <Fade bottom><div className="contact-email" target="_blank" rel="noopener noreferrer"></div></Fade>
+                        <a href="mailto:omalik91@gmail.com" target="_blank" rel="noopener noreferrer" onClick={EmailClickHandler}>
+                            <Fade bottom><div className="contact-email"></div></Fade>
                         </a>
-                        <a href="https://linkedin.com/in/osamasmalik" target="_blank" rel="noopener noreferrer">
+                        <a href="https://linkedin.com/in/osamasmalik" target="_blank" rel="noopener noreferrer" onClick={LinkedInClickHandler}>
                             <Fade bottom><div className="contact-linkedin"></div></Fade>
                         </a>
-                        <a href="https://github.com/osamamalik" target="_blank" rel="noopener noreferrer">
+                        <a href="https://github.com/osamamalik" target="_blank" rel="noopener noreferrer" onClick={GitHubClickHandler}>
                             <Fade bottom><div className="contact-github"></div></Fade>
                         </a>
                     </div>

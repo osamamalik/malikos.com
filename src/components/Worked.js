@@ -1,4 +1,5 @@
 import React from 'react';
+import ReactGA from 'react-ga';
 import { Fade } from 'react-reveal';
 import abelsoft from '../res/abelsoft.png';
 import deloitte from '../res/deloitte.png';
@@ -9,6 +10,13 @@ import resume from '../res/osama-malik-resume.pdf';
 
 export default class Worked extends React.Component {
     render() {
+        const ClickHandler = () => {
+            ReactGA.event({
+                category: 'Resume',
+                action: 'Resume clicked'
+            });
+        };
+
         return (
             <div className="worked">
                 <div className="container">
@@ -21,10 +29,10 @@ export default class Worked extends React.Component {
                             <Fade bottom><a href="https://www.abelsoft.com/" alt="abelsoft"><img src={abelsoft} alt="ABELSoft" /></a></Fade>
                         </div>
                         <div className="worked-resume">
-                            <Fade bottom><h2>View My Resume</h2></Fade>
+                            <Fade bottom><h2><a href={resume} target="_blank" rel="noopener noreferrer" onClick={ClickHandler}>View My Resume</a></h2></Fade>
                             <br />
                             <div className="resume-container">
-                                <Fade bottom><a href={resume} target="_blank" rel="noopener noreferrer"><img src={resumeicon} className="resume-icon" alt="resume" target="_blank" rel="noopener noreferrer" /></a></Fade>
+                                <Fade bottom><a href={resume} target="_blank" rel="noopener noreferrer" onClick={ClickHandler}><img src={resumeicon} className="resume-icon" alt="resume" target="_blank" rel="noopener noreferrer" /></a></Fade>
                             </div>
                         </div>
                     </div>
